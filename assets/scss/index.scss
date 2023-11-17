@@ -1,0 +1,182 @@
+@import './themes/variable';
+@import './component/component';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    background: $c0-bg-dark;
+
+    .container {
+        height: 60px;
+        background: $c0-bg-dark;
+
+        .header-logo {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            align-items: center;
+
+            a {}
+
+            .header-login {
+                a {
+                    // color: #fff;
+                    text-decoration: none;
+                    // font-weight: $fw-light;
+                    // font-size: $fz-base;
+                    margin: 0 10px;
+                    @include text($fz-base, $fw-light, $c0-text-light)
+                }
+            }
+        }
+    }
+}
+
+.header-nav {
+    .container {
+        a {
+
+            text-decoration: none;
+            font-weight: $fw-light;
+            color: $c0-text-dark;
+            margin: 0 15px;
+            font-size: $fz-base;
+            position: relative;
+
+
+            &::after {
+                position: absolute;
+                content: '';
+                height: 3px;
+                width: 0;
+                background-color: #000;
+                bottom: -5px;
+                left: 0;
+                transition: width 0.5s;
+            }
+
+            &:hover {
+                &::after {
+                    width: 100%;
+                    transition: width 0.5s;
+                }
+            }
+        }
+    }
+}
+
+//star carousel
+
+.carousel {
+
+
+    .container {
+        background-image: url(/img/backgroup_1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        height: 400px;
+
+        .carousel-image {
+            width: 70%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .carousel-name {
+            padding-right: 100px;
+            width: 30%;
+
+            .carousel-title {
+                font-size: $fz-3xl;
+                font-weight: $fw-regular;
+            }
+
+            .carousel-alias {
+                font-size: $fz-base;
+                font-weight: $fw-light;
+            }
+
+            .btn-shop {
+                @include button($fz-base, $fw-light, $c0-text-dark, $b0-warning, 5px 20px, 2px solid $b0-warning, 8px, $b1-warning, $c0-text-light )
+            }
+        }
+    }
+}
+
+.product-feature {
+    .container {
+        .product-title {
+            text-align: center;
+            margin: 15px auto;
+            @include text($fz-3xl, $fw-semibold, $c0-text-dark)
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+
+            .card {
+
+                width: calc(90%/3);
+                margin: 15px;
+                box-shadow: -1px 0px 16px 4px rgba(217, 217, 217, 0.75);
+                -webkit-box-shadow: -1px 0px 16px 4px rgba(217, 217, 217, 0.75);
+                -moz-box-shadow: -1px 0px 16px 4px rgba(217, 217, 217, 0.75);
+
+                .card-body {
+                    margin: 15px;
+                    padding: 15px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .card-footer {
+                    .product-name {
+                        @include text($fz-2xl, $fw-semibold, $c0-text-dark)
+                    }
+
+                    .product-info {
+                        @include text($fz-base, $fw-light, $c0-text-dark)
+                    }
+
+                    .product-buy {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border: 2px solid $b1-warning;
+                        border-radius: 8px;
+                        background-color: $b1-warning;
+
+                        .btn-buy {
+                            @include button($fz-xl, $fw-regular, $c0-text-dark, $b0-warning, 15px 35px, 2px solid $b0-warning, 8px, $b1-warning, $c0-text-light )
+                        }
+
+                        .product-price {
+
+                            @include text($fz-xl, $fw-bold, $c0-text-dark)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

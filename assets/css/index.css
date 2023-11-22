@@ -161,4 +161,114 @@
   font-size: 18px;
   font-weight: 700;
   color: #000;
+}
+
+.footer-contact .container .footer-up {
+  display: flex;
+  justify-content: center;
+}
+.footer-contact .container .footer-up .get-help {
+  width: 30%;
+}
+.footer-contact .container .footer-up .get-help a {
+  text-decoration: none;
+}
+.footer-contact .container .footer-up .get-help a h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+.footer-contact .container .footer-up .get-help a p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.footer-contact .container .footer-up .orders {
+  width: 30%;
+}
+.footer-contact .container .footer-up .orders a {
+  text-decoration: none;
+}
+.footer-contact .container .footer-up .orders a h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+.footer-contact .container .footer-up .orders a p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.footer-contact .container .footer-up .register {
+  width: 30%;
+}
+.footer-contact .container .footer-up .register a {
+  text-decoration: none;
+}
+.footer-contact .container .footer-up .register a h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+.footer-contact .container .footer-up .register a p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+.footer-down {
+  background-color: #978f88;
+}
+.footer-down .container {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+.footer-down .container .email-sign-up {
+  width: 30%;
+}
+.footer-down .container .email-sign-up a {
+  text-decoration: none;
+}
+.footer-down .container .email-sign-up a h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+.footer-down .container .email-sign-up a p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.footer-down .container .gift-cards {
+  width: 30%;
+}
+.footer-down .container .gift-cards a {
+  text-decoration: none;
+}
+.footer-down .container .gift-cards a h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+.footer-down .container .gift-cards a p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.footer-down .container .stores-near-you {
+  width: 30%;
+}
+.footer-down .container .stores-near-you a {
+  text-decoration: none;
+}
+.footer-down .container .stores-near-you a h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+.footer-down .container .stores-near-you a p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
 }/*# sourceMappingURL=index.css.map */

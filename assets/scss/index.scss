@@ -180,3 +180,127 @@
         }
     }
 }
+
+.footer-contact {
+    .container {
+        .footer-up {
+            display: flex;
+            justify-content: center;
+
+            .get-help {
+                width: 30%;
+
+                a {
+                    text-decoration: none;
+
+                    h1 {
+                        @include text($fz-xl, $fw-bold, $c0-text-dark)
+                    }
+
+                    p {
+                        @include text($fz-base, $fw-light, $c0-text-dark)
+                    }
+                }
+            }
+
+            .orders {
+                width: 30%;
+
+                a {
+                    text-decoration: none;
+
+                    h1 {
+                        @include text($fz-xl, $fw-bold, $c0-text-dark)
+                    }
+
+                    p {
+                        @include text($fz-base, $fw-light, $c0-text-dark)
+                    }
+
+
+                }
+            }
+
+            .register {
+                width: 30%;
+
+                a {
+                    text-decoration: none;
+
+                    h1 {
+                        @include text($fz-xl, $fw-bold, $c0-text-dark)
+                    }
+
+                    p {
+                        @include text($fz-base, $fw-light, $c0-text-dark)
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.footer-down {
+    background-color: $b1-warning;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+
+
+        .email-sign-up {
+            width: 30%;
+
+
+            a {
+                text-decoration: none;
+
+                h1 {
+                    @include text($fz-xl, $fw-bold, $c0-text-dark)
+                }
+
+                p {
+                    @include text($fz-base, $fw-light, $c0-text-dark)
+                }
+            }
+
+        }
+
+        .gift-cards {
+            width: 30%;
+
+            a {
+                text-decoration: none;
+
+                h1 {
+                    @include text($fz-xl, $fw-bold, $c0-text-dark)
+                }
+
+                p {
+                    @include text($fz-base, $fw-light, $c0-text-dark)
+                }
+            }
+        }
+
+        .stores-near-you {
+            width: 30%;
+
+            a {
+                text-decoration: none;
+
+                h1 {
+                    @include text($fz-xl, $fw-bold, $c0-text-dark)
+                }
+
+                p {
+                    @include text($fz-base, $fw-light, $c0-text-dark)
+                }
+            }
+
+        }
+    }
+
+
+}
